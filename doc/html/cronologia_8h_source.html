@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Cronologia: Fichero Fuente include/cronologia.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Cronologia
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">cronologia.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _CRONOLOGIA_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _CRONOLOGIA_H_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;fechahistorica.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_cronologia.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_cronologia.html">Cronologia</a>{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordtype">int</span> num_eventos; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <a class="code" href="class_fecha_historica.html">FechaHistorica</a> *eventos;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_cronologia.html#ac0026b1919148f6cd6cf4ca4c357771e">   32</a></span>&#160;<a class="code" href="class_cronologia.html#ac0026b1919148f6cd6cf4ca4c357771e">Cronologia</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_cronologia.html#a35694d459c7f2bc902b8db6abf13662d">   39</a></span>&#160;<a class="code" href="class_cronologia.html#a35694d459c7f2bc902b8db6abf13662d">Cronologia</a>(<span class="keyword">const</span> <a class="code" href="class_cronologia.html">Cronologia</a>&amp; c);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_cronologia.html#ac9fddecd2c0a8416d7896d61c74e4dd8">   48</a></span>&#160;<a class="code" href="class_cronologia.html">Cronologia</a>&amp; <a class="code" href="class_cronologia.html#ac9fddecd2c0a8416d7896d61c74e4dd8">operator=</a>(<span class="keyword">const</span> <a class="code" href="class_cronologia.html">Cronologia</a> &amp;c);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_cronologia.html#ae0dd5f219b9165806e1fea3095a1aa7a">   54</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_cronologia.html#ae0dd5f219b9165806e1fea3095a1aa7a">ordenar</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_cronologia.html#a60d227de9ea5766965418f8f944dc4f2">   64</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_cronologia.html#a60d227de9ea5766965418f8f944dc4f2">insertFechaHistorica</a>(<a class="code" href="class_fecha_historica.html">FechaHistorica</a> &amp;f);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_cronologia.html#a4b1e43f23439ca54aaea53dd2d3e32ff">   70</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_cronologia.html#a4b1e43f23439ca54aaea53dd2d3e32ff">getNumEventos</a>()<span class="keyword">const</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="class_cronologia.html#aaa5c1d576f32109aa70a1be3aca498d7">   77</a></span>&#160;<a class="code" href="class_fecha_historica.html">FechaHistorica</a> <a class="code" href="class_cronologia.html#aaa5c1d576f32109aa70a1be3aca498d7">getFechaHistorica</a>(<span class="keywordtype">int</span> pos)<span class="keyword">const</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="class_cronologia.html#a1982a27a085ab764428f8e9376da0d68">   84</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_cronologia.html#a1982a27a085ab764428f8e9376da0d68">buscarPorFecha</a>(<span class="keywordtype">int</span> anio);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="class_cronologia.html#ac20b6212bccc1aa82496b24efa16cb94">   93</a></span>&#160;<a class="code" href="class_cronologia.html">Cronologia</a> <a class="code" href="class_cronologia.html#ac20b6212bccc1aa82496b24efa16cb94">buscarPorPalabra</a>(<span class="keywordtype">string</span> palabra);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="class_cronologia.html#ad4d78802c81f1fa1b6f13fd94e85eb34">  106</a></span>&#160;<a class="code" href="class_cronologia.html">Cronologia</a> <a class="code" href="class_cronologia.html#ad4d78802c81f1fa1b6f13fd94e85eb34">buscarEntreFechas</a>(<span class="keywordtype">int</span> fInicio, <span class="keywordtype">int</span> fFinal);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="class_cronologia.html#a963240bc402aeeeb3f6d6c4c4c4960bf">  115</a></span>&#160;<span class="keyword">friend</span> ostream&amp; <a class="code" href="class_cronologia.html#a963240bc402aeeeb3f6d6c4c4c4960bf">operator&lt;&lt;</a>(std::ostream &amp;flujo, <span class="keyword">const</span> <a class="code" href="class_cronologia.html">Cronologia</a> &amp;c);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="class_cronologia.html#a7e995892e46a00b54d70a905e2bdbc53">  120</a></span>&#160;<a class="code" href="class_cronologia.html#a7e995892e46a00b54d70a905e2bdbc53">~Cronologia</a>();</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;};</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;istream&amp; operator&gt;&gt;(std::istream &amp;flujo, <a class="code" href="class_cronologia.html">Cronologia</a> &amp;c);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_cronologia_html"><div class="ttname"><a href="class_cronologia.html">Cronologia</a></div><div class="ttdoc">T.D.A. de un conjunto de FechaHistorica ordenadas por fechas.</div><div class="ttdef"><b>Definition:</b> cronologia.h:21</div></div>
+<div class="ttc" id="aclass_cronologia_html_ac20b6212bccc1aa82496b24efa16cb94"><div class="ttname"><a href="class_cronologia.html#ac20b6212bccc1aa82496b24efa16cb94">Cronologia::buscarPorPalabra</a></div><div class="ttdeci">Cronologia buscarPorPalabra(string palabra)</div><div class="ttdoc">busca los acontecimientos sucedidos asociados a una palabra</div></div>
+<div class="ttc" id="aclass_cronologia_html_ad4d78802c81f1fa1b6f13fd94e85eb34"><div class="ttname"><a href="class_cronologia.html#ad4d78802c81f1fa1b6f13fd94e85eb34">Cronologia::buscarEntreFechas</a></div><div class="ttdeci">Cronologia buscarEntreFechas(int fInicio, int fFinal)</div><div class="ttdoc">busca los acontecimientos sucedidos entre dos fechas</div></div>
+<div class="ttc" id="aclass_cronologia_html_aaa5c1d576f32109aa70a1be3aca498d7"><div class="ttname"><a href="class_cronologia.html#aaa5c1d576f32109aa70a1be3aca498d7">Cronologia::getFechaHistorica</a></div><div class="ttdeci">FechaHistorica getFechaHistorica(int pos) const</div><div class="ttdoc">Fecha Hsitorica.</div></div>
+<div class="ttc" id="aclass_cronologia_html_a35694d459c7f2bc902b8db6abf13662d"><div class="ttname"><a href="class_cronologia.html#a35694d459c7f2bc902b8db6abf13662d">Cronologia::Cronologia</a></div><div class="ttdeci">Cronologia(const Cronologia &amp;c)</div><div class="ttdoc">Constructor de copia.</div></div>
+<div class="ttc" id="aclass_cronologia_html_ac9fddecd2c0a8416d7896d61c74e4dd8"><div class="ttname"><a href="class_cronologia.html#ac9fddecd2c0a8416d7896d61c74e4dd8">Cronologia::operator=</a></div><div class="ttdeci">Cronologia &amp; operator=(const Cronologia &amp;c)</div><div class="ttdoc">Sobrecarga del operador =.</div></div>
+<div class="ttc" id="aclass_cronologia_html_ae0dd5f219b9165806e1fea3095a1aa7a"><div class="ttname"><a href="class_cronologia.html#ae0dd5f219b9165806e1fea3095a1aa7a">Cronologia::ordenar</a></div><div class="ttdeci">void ordenar()</div><div class="ttdoc">ordena el array FechaHistorica por su fecha de mayor a menos</div></div>
+<div class="ttc" id="aclass_cronologia_html_a7e995892e46a00b54d70a905e2bdbc53"><div class="ttname"><a href="class_cronologia.html#a7e995892e46a00b54d70a905e2bdbc53">Cronologia::~Cronologia</a></div><div class="ttdeci">~Cronologia()</div><div class="ttdoc">Destructor de la clase Cronologia.</div></div>
+<div class="ttc" id="aclass_cronologia_html_ac0026b1919148f6cd6cf4ca4c357771e"><div class="ttname"><a href="class_cronologia.html#ac0026b1919148f6cd6cf4ca4c357771e">Cronologia::Cronologia</a></div><div class="ttdeci">Cronologia()</div><div class="ttdoc">Constructor por defecto.</div></div>
+<div class="ttc" id="aclass_cronologia_html_a4b1e43f23439ca54aaea53dd2d3e32ff"><div class="ttname"><a href="class_cronologia.html#a4b1e43f23439ca54aaea53dd2d3e32ff">Cronologia::getNumEventos</a></div><div class="ttdeci">int getNumEventos() const</div><div class="ttdoc">Número de eventos.</div></div>
+<div class="ttc" id="aclass_cronologia_html_a1982a27a085ab764428f8e9376da0d68"><div class="ttname"><a href="class_cronologia.html#a1982a27a085ab764428f8e9376da0d68">Cronologia::buscarPorFecha</a></div><div class="ttdeci">void buscarPorFecha(int anio)</div><div class="ttdoc">busca los acontecimientos sucedidos en un año especifico</div></div>
+<div class="ttc" id="aclass_cronologia_html_a963240bc402aeeeb3f6d6c4c4c4960bf"><div class="ttname"><a href="class_cronologia.html#a963240bc402aeeeb3f6d6c4c4c4960bf">Cronologia::operator&lt;&lt;</a></div><div class="ttdeci">friend ostream &amp; operator&lt;&lt;(std::ostream &amp;flujo, const Cronologia &amp;c)</div><div class="ttdoc">Sobrecarga del operador &lt;&lt;.</div></div>
+<div class="ttc" id="aclass_cronologia_html_a60d227de9ea5766965418f8f944dc4f2"><div class="ttname"><a href="class_cronologia.html#a60d227de9ea5766965418f8f944dc4f2">Cronologia::insertFechaHistorica</a></div><div class="ttdeci">void insertFechaHistorica(FechaHistorica &amp;f)</div><div class="ttdoc">insertar un objeto FechaHistorica dentro del array eventos</div></div>
+<div class="ttc" id="aclass_fecha_historica_html"><div class="ttname"><a href="class_fecha_historica.html">FechaHistorica</a></div><div class="ttdoc">T.D.A. de un conjuto de acontecimientos en una fecha.</div><div class="ttdef"><b>Definition:</b> fechahistorica.h:25</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

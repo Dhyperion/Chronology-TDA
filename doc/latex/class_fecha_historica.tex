@@ -1,0 +1,213 @@
+\hypertarget{class_fecha_historica}{}\doxysection{Referencia de la Clase Fecha\+Historica}
+\label{class_fecha_historica}\index{FechaHistorica@{FechaHistorica}}
+
+
+T.\+D.\+A. de un conjuto de acontecimientos en una fecha.  
+
+
+
+
+{\ttfamily \#include $<$fechahistorica.\+h$>$}
+
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_fecha_historica_a35baa09e365240e567049a7e33a7c209}\label{class_fecha_historica_a35baa09e365240e567049a7e33a7c209}} 
+\mbox{\hyperlink{class_fecha_historica_a35baa09e365240e567049a7e33a7c209}{Fecha\+Historica}} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_fecha_historica_a40a9c133a139d41bf84406e09022feaf}{Fecha\+Historica}} (const \mbox{\hyperlink{class_fecha_historica}{Fecha\+Historica}} \&f)
+\begin{DoxyCompactList}\small\item\em Constructor de copia. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_fecha_historica}{Fecha\+Historica}} \& \mbox{\hyperlink{class_fecha_historica_a4e6922a922949ad3395c20df452fbff7}{operator=}} (const \mbox{\hyperlink{class_fecha_historica}{Fecha\+Historica}} \&f)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador =. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_fecha_historica_ab37db2253eb8061611ad132243b10242}{operator$<$}} (const \mbox{\hyperlink{class_fecha_historica}{Fecha\+Historica}} \&f)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador $<$. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fecha_historica_a65c4d2913ca77c416e4dd2e1b982163d}{set\+Fecha}} (int fecha)
+\begin{DoxyCompactList}\small\item\em asignación de una fecha para el objeto \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fecha_historica_a7684c52646a3710c1d64e2ddaf0d955f}{insert\+Acontecimiento}} (string acon)
+\begin{DoxyCompactList}\small\item\em inserción de un acontecimiento histórico en el array acontecimientos \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_fecha_historica_a097dbc7b300fea579e09308bb19db944}{get\+Num\+Acon}} () const
+\begin{DoxyCompactList}\small\item\em Numero de acontecimientos. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_fecha_historica_acf81e1528a9c7e813626873745cd55d7}{get\+Fecha}} () const
+\begin{DoxyCompactList}\small\item\em Fecha. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_fecha_historica_a5036f02f5993fb341982cb152766f5cf}{get\+Acontecimiento}} (int pos) const
+\begin{DoxyCompactList}\small\item\em Acontecimiento. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_fecha_historica_aba16f6ca6fefa10cd01476f2c00eca13}{buscar\+Acontecimiento}} (string s, \mbox{\hyperlink{class_fecha_historica}{Fecha\+Historica}} \&f)
+\begin{DoxyCompactList}\small\item\em busca un acontecimiento especifico en el array \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_fecha_historica_a634de6e216261ee47721922692d2934f}\label{class_fecha_historica_a634de6e216261ee47721922692d2934f}} 
+\mbox{\hyperlink{class_fecha_historica_a634de6e216261ee47721922692d2934f}{$\sim$\+Fecha\+Historica}} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase \mbox{\hyperlink{class_fecha_historica}{Fecha\+Historica}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+T.\+D.\+A. de un conjuto de acontecimientos en una fecha. 
+
+una instancia {\itshape c} del tipo de datos abstracto ©c \mbox{\hyperlink{class_fecha_historica}{Fecha\+Historica}} es un objeto de los acontecimientos realizados en una fecha, compuesto por un array de strings que almacenará los acontecimientos sucedidos y un valor entero que representa la fecha que sucedierón los acontecimientos.
+
+\begin{DoxyAuthor}{Autor}
+Manuel Jesús Alcaraz Cortizo 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_fecha_historica_a40a9c133a139d41bf84406e09022feaf}\label{class_fecha_historica_a40a9c133a139d41bf84406e09022feaf}} 
+\index{FechaHistorica@{FechaHistorica}!FechaHistorica@{FechaHistorica}}
+\index{FechaHistorica@{FechaHistorica}!FechaHistorica@{FechaHistorica}}
+\doxysubsubsection{\texorpdfstring{FechaHistorica()}{FechaHistorica()}}
+{\footnotesize\ttfamily Fecha\+Historica\+::\+Fecha\+Historica (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_fecha_historica}{Fecha\+Historica}} \&}]{f }\end{DoxyParamCaption})}
+
+
+
+Constructor de copia. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em fh} & un objeto de \mbox{\hyperlink{class_fecha_historica}{Fecha\+Historica}} \\
+\hline
+{\em f.\+Fecha} & fecha del objeto \mbox{\hyperlink{class_fecha_historica}{Fecha\+Historica}} a construir \\
+\hline
+{\em f.\+num\+\_\+acon} & numeros de acontecimientos del objeto \mbox{\hyperlink{class_fecha_historica}{Fecha\+Historica}} a construir \\
+\hline
+{\em f.\+acontecimientos\mbox{[}$\,$\mbox{]}} & conjunto de acontecimientos del objeto \mbox{\hyperlink{class_fecha_historica}{Fecha\+Historica}} a construir \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_fecha_historica_aba16f6ca6fefa10cd01476f2c00eca13}\label{class_fecha_historica_aba16f6ca6fefa10cd01476f2c00eca13}} 
+\index{FechaHistorica@{FechaHistorica}!buscarAcontecimiento@{buscarAcontecimiento}}
+\index{buscarAcontecimiento@{buscarAcontecimiento}!FechaHistorica@{FechaHistorica}}
+\doxysubsubsection{\texorpdfstring{buscarAcontecimiento()}{buscarAcontecimiento()}}
+{\footnotesize\ttfamily bool Fecha\+Historica\+::buscar\+Acontecimiento (\begin{DoxyParamCaption}\item[{string}]{s,  }\item[{\mbox{\hyperlink{class_fecha_historica}{Fecha\+Historica}} \&}]{f }\end{DoxyParamCaption})}
+
+
+
+busca un acontecimiento especifico en el array 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em s,palabra} & clave utilizada para buscar el acontecimiento \\
+\hline
+{\em f,objeto} & utilizado para pasar el acontecimiento si es encontrado\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+devuelve 0 si se encuentra la palabra clave y 1 si no 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fecha_historica_a5036f02f5993fb341982cb152766f5cf}\label{class_fecha_historica_a5036f02f5993fb341982cb152766f5cf}} 
+\index{FechaHistorica@{FechaHistorica}!getAcontecimiento@{getAcontecimiento}}
+\index{getAcontecimiento@{getAcontecimiento}!FechaHistorica@{FechaHistorica}}
+\doxysubsubsection{\texorpdfstring{getAcontecimiento()}{getAcontecimiento()}}
+{\footnotesize\ttfamily string Fecha\+Historica\+::get\+Acontecimiento (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption}) const}
+
+
+
+Acontecimiento. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em pos,posición} & del vector que se quiere consultar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+devuelve un acontecimientomnbv s del array acontecimientos 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fecha_historica_acf81e1528a9c7e813626873745cd55d7}\label{class_fecha_historica_acf81e1528a9c7e813626873745cd55d7}} 
+\index{FechaHistorica@{FechaHistorica}!getFecha@{getFecha}}
+\index{getFecha@{getFecha}!FechaHistorica@{FechaHistorica}}
+\doxysubsubsection{\texorpdfstring{getFecha()}{getFecha()}}
+{\footnotesize\ttfamily int Fecha\+Historica\+::get\+Fecha (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Fecha. 
+
+\begin{DoxyReturn}{Devuelve}
+devuelve la Fecha historica en la que transcurren los acontecimientos 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fecha_historica_a097dbc7b300fea579e09308bb19db944}\label{class_fecha_historica_a097dbc7b300fea579e09308bb19db944}} 
+\index{FechaHistorica@{FechaHistorica}!getNumAcon@{getNumAcon}}
+\index{getNumAcon@{getNumAcon}!FechaHistorica@{FechaHistorica}}
+\doxysubsubsection{\texorpdfstring{getNumAcon()}{getNumAcon()}}
+{\footnotesize\ttfamily int Fecha\+Historica\+::get\+Num\+Acon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Numero de acontecimientos. 
+
+\begin{DoxyReturn}{Devuelve}
+devuelve el numero de acontecimientos del objeto 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fecha_historica_a7684c52646a3710c1d64e2ddaf0d955f}\label{class_fecha_historica_a7684c52646a3710c1d64e2ddaf0d955f}} 
+\index{FechaHistorica@{FechaHistorica}!insertAcontecimiento@{insertAcontecimiento}}
+\index{insertAcontecimiento@{insertAcontecimiento}!FechaHistorica@{FechaHistorica}}
+\doxysubsubsection{\texorpdfstring{insertAcontecimiento()}{insertAcontecimiento()}}
+{\footnotesize\ttfamily void Fecha\+Historica\+::insert\+Acontecimiento (\begin{DoxyParamCaption}\item[{string}]{acon }\end{DoxyParamCaption})}
+
+
+
+inserción de un acontecimiento histórico en el array acontecimientos 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em acon,acontecimiento} & que se asignará en una nueva posición del array\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+vector acontecimientos redimensionado con una nueva posición y con el parametro acon insertado en el 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fecha_historica_ab37db2253eb8061611ad132243b10242}\label{class_fecha_historica_ab37db2253eb8061611ad132243b10242}} 
+\index{FechaHistorica@{FechaHistorica}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!FechaHistorica@{FechaHistorica}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Fecha\+Historica\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_fecha_historica}{Fecha\+Historica}} \&}]{f }\end{DoxyParamCaption})}
+
+
+
+Sobrecarga del operador $<$. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em f} & un objeto de \mbox{\hyperlink{class_fecha_historica}{Fecha\+Historica}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+devuelve 1 si este objeto es mayor a f y 0 si es menor 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fecha_historica_a4e6922a922949ad3395c20df452fbff7}\label{class_fecha_historica_a4e6922a922949ad3395c20df452fbff7}} 
+\index{FechaHistorica@{FechaHistorica}!operator=@{operator=}}
+\index{operator=@{operator=}!FechaHistorica@{FechaHistorica}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fecha_historica}{Fecha\+Historica}}\& Fecha\+Historica\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_fecha_historica}{Fecha\+Historica}} \&}]{f }\end{DoxyParamCaption})}
+
+
+
+Sobrecarga del operador =. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em fh} & un objeto de \mbox{\hyperlink{class_fecha_historica}{Fecha\+Historica}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve el propio objeto con los valores del objeto f 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fecha_historica_a65c4d2913ca77c416e4dd2e1b982163d}\label{class_fecha_historica_a65c4d2913ca77c416e4dd2e1b982163d}} 
+\index{FechaHistorica@{FechaHistorica}!setFecha@{setFecha}}
+\index{setFecha@{setFecha}!FechaHistorica@{FechaHistorica}}
+\doxysubsubsection{\texorpdfstring{setFecha()}{setFecha()}}
+{\footnotesize\ttfamily void Fecha\+Historica\+::set\+Fecha (\begin{DoxyParamCaption}\item[{int}]{fecha }\end{DoxyParamCaption})}
+
+
+
+asignación de una fecha para el objeto 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em fecha,fecha} & de los acontecimientos a asignar \\
+\hline
+\end{DoxyParams}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+include/fechahistorica.\+h\end{DoxyCompactItemize}

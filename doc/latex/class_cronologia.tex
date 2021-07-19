@@ -1,0 +1,223 @@
+\hypertarget{class_cronologia}{}\doxysection{Referencia de la Clase Cronologia}
+\label{class_cronologia}\index{Cronologia@{Cronologia}}
+
+
+T.\+D.\+A. de un conjunto de \mbox{\hyperlink{class_fecha_historica}{Fecha\+Historica}} ordenadas por fechas.  
+
+
+
+
+{\ttfamily \#include $<$cronologia.\+h$>$}
+
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_cronologia_ac0026b1919148f6cd6cf4ca4c357771e}\label{class_cronologia_ac0026b1919148f6cd6cf4ca4c357771e}} 
+\mbox{\hyperlink{class_cronologia_ac0026b1919148f6cd6cf4ca4c357771e}{Cronologia}} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cronologia_a35694d459c7f2bc902b8db6abf13662d}{Cronologia}} (const \mbox{\hyperlink{class_cronologia}{Cronologia}} \&c)
+\begin{DoxyCompactList}\small\item\em Constructor de copia. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cronologia}{Cronologia}} \& \mbox{\hyperlink{class_cronologia_ac9fddecd2c0a8416d7896d61c74e4dd8}{operator=}} (const \mbox{\hyperlink{class_cronologia}{Cronologia}} \&c)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador =. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_cronologia_ae0dd5f219b9165806e1fea3095a1aa7a}\label{class_cronologia_ae0dd5f219b9165806e1fea3095a1aa7a}} 
+void \mbox{\hyperlink{class_cronologia_ae0dd5f219b9165806e1fea3095a1aa7a}{ordenar}} ()
+\begin{DoxyCompactList}\small\item\em ordena el array \mbox{\hyperlink{class_fecha_historica}{Fecha\+Historica}} por su fecha de mayor a menos \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cronologia_a60d227de9ea5766965418f8f944dc4f2}{insert\+Fecha\+Historica}} (\mbox{\hyperlink{class_fecha_historica}{Fecha\+Historica}} \&f)
+\begin{DoxyCompactList}\small\item\em insertar un objeto \mbox{\hyperlink{class_fecha_historica}{Fecha\+Historica}} dentro del array eventos \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_cronologia_a4b1e43f23439ca54aaea53dd2d3e32ff}{get\+Num\+Eventos}} () const
+\begin{DoxyCompactList}\small\item\em Número de eventos. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_fecha_historica}{Fecha\+Historica}} \mbox{\hyperlink{class_cronologia_aaa5c1d576f32109aa70a1be3aca498d7}{get\+Fecha\+Historica}} (int pos) const
+\begin{DoxyCompactList}\small\item\em Fecha Hsitorica. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cronologia_a1982a27a085ab764428f8e9376da0d68}{buscar\+Por\+Fecha}} (int anio)
+\begin{DoxyCompactList}\small\item\em busca los acontecimientos sucedidos en un año especifico \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cronologia}{Cronologia}} \mbox{\hyperlink{class_cronologia_ac20b6212bccc1aa82496b24efa16cb94}{buscar\+Por\+Palabra}} (string palabra)
+\begin{DoxyCompactList}\small\item\em busca los acontecimientos sucedidos asociados a una palabra \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cronologia}{Cronologia}} \mbox{\hyperlink{class_cronologia_ad4d78802c81f1fa1b6f13fd94e85eb34}{buscar\+Entre\+Fechas}} (int f\+Inicio, int f\+Final)
+\begin{DoxyCompactList}\small\item\em busca los acontecimientos sucedidos entre dos fechas \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_cronologia_a7e995892e46a00b54d70a905e2bdbc53}\label{class_cronologia_a7e995892e46a00b54d70a905e2bdbc53}} 
+\mbox{\hyperlink{class_cronologia_a7e995892e46a00b54d70a905e2bdbc53}{$\sim$\+Cronologia}} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase \mbox{\hyperlink{class_cronologia}{Cronologia}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Amigas}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{class_cronologia_a963240bc402aeeeb3f6d6c4c4c4960bf}{operator$<$$<$}} (std\+::ostream \&flujo, const \mbox{\hyperlink{class_cronologia}{Cronologia}} \&c)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador $<$$<$. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+T.\+D.\+A. de un conjunto de \mbox{\hyperlink{class_fecha_historica}{Fecha\+Historica}} ordenadas por fechas. 
+
+una instancia {\itshape c} del tipo de datos abstracto {\ttfamily \mbox{\hyperlink{class_cronologia}{Cronologia}}} es un objeto que agrupa acontecimientos ocasionados en distintas fechas, compuesto por un array de \mbox{\hyperlink{class_fecha_historica}{Fecha\+Historica}} que almacenará en cada posicion los acontecimientos de un año especifico.
+
+\begin{DoxyAuthor}{Autor}
+Manuel Jesús Alcaraz Cortizo 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_cronologia_a35694d459c7f2bc902b8db6abf13662d}\label{class_cronologia_a35694d459c7f2bc902b8db6abf13662d}} 
+\index{Cronologia@{Cronologia}!Cronologia@{Cronologia}}
+\index{Cronologia@{Cronologia}!Cronologia@{Cronologia}}
+\doxysubsubsection{\texorpdfstring{Cronologia()}{Cronologia()}}
+{\footnotesize\ttfamily Cronologia\+::\+Cronologia (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_cronologia}{Cronologia}} \&}]{c }\end{DoxyParamCaption})}
+
+
+
+Constructor de copia. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em c} & un objeto de \mbox{\hyperlink{class_cronologia}{Cronologia}} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_cronologia_ad4d78802c81f1fa1b6f13fd94e85eb34}\label{class_cronologia_ad4d78802c81f1fa1b6f13fd94e85eb34}} 
+\index{Cronologia@{Cronologia}!buscarEntreFechas@{buscarEntreFechas}}
+\index{buscarEntreFechas@{buscarEntreFechas}!Cronologia@{Cronologia}}
+\doxysubsubsection{\texorpdfstring{buscarEntreFechas()}{buscarEntreFechas()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cronologia}{Cronologia}} Cronologia\+::buscar\+Entre\+Fechas (\begin{DoxyParamCaption}\item[{int}]{f\+Inicio,  }\item[{int}]{f\+Final }\end{DoxyParamCaption})}
+
+
+
+busca los acontecimientos sucedidos entre dos fechas 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em f\+Inicio} & se creará la subcronología a partir de esta fecha \\
+\hline
+{\em f\+Final} & fecha que finaliza la creación de la subcronologría a partir de ella\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+f\+Inicio tiene que ser menor a f\+Final
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Devuelve}
+devuelve una subcronología con los eventos sucedidos entre las dos fechas especificadas 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cronologia_a1982a27a085ab764428f8e9376da0d68}\label{class_cronologia_a1982a27a085ab764428f8e9376da0d68}} 
+\index{Cronologia@{Cronologia}!buscarPorFecha@{buscarPorFecha}}
+\index{buscarPorFecha@{buscarPorFecha}!Cronologia@{Cronologia}}
+\doxysubsubsection{\texorpdfstring{buscarPorFecha()}{buscarPorFecha()}}
+{\footnotesize\ttfamily void Cronologia\+::buscar\+Por\+Fecha (\begin{DoxyParamCaption}\item[{int}]{anio }\end{DoxyParamCaption})}
+
+
+
+busca los acontecimientos sucedidos en un año especifico 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em anio,año} & de los acontecimientos que se quieren buscar \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cronologia_ac20b6212bccc1aa82496b24efa16cb94}\label{class_cronologia_ac20b6212bccc1aa82496b24efa16cb94}} 
+\index{Cronologia@{Cronologia}!buscarPorPalabra@{buscarPorPalabra}}
+\index{buscarPorPalabra@{buscarPorPalabra}!Cronologia@{Cronologia}}
+\doxysubsubsection{\texorpdfstring{buscarPorPalabra()}{buscarPorPalabra()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cronologia}{Cronologia}} Cronologia\+::buscar\+Por\+Palabra (\begin{DoxyParamCaption}\item[{string}]{palabra }\end{DoxyParamCaption})}
+
+
+
+busca los acontecimientos sucedidos asociados a una palabra 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em palabra,palabra} & clave para buscar los acontecimientos asociados a esta\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+retorna una subcronología con los eventos sucedidos de la palabra especificada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cronologia_aaa5c1d576f32109aa70a1be3aca498d7}\label{class_cronologia_aaa5c1d576f32109aa70a1be3aca498d7}} 
+\index{Cronologia@{Cronologia}!getFechaHistorica@{getFechaHistorica}}
+\index{getFechaHistorica@{getFechaHistorica}!Cronologia@{Cronologia}}
+\doxysubsubsection{\texorpdfstring{getFechaHistorica()}{getFechaHistorica()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fecha_historica}{Fecha\+Historica}} Cronologia\+::get\+Fecha\+Historica (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption}) const}
+
+
+
+Fecha Hsitorica. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em pos} & posición del vector que se quiere consultar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+devuelve un objeto \mbox{\hyperlink{class_fecha_historica}{Fecha\+Historica}} dentro del array eventos 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cronologia_a4b1e43f23439ca54aaea53dd2d3e32ff}\label{class_cronologia_a4b1e43f23439ca54aaea53dd2d3e32ff}} 
+\index{Cronologia@{Cronologia}!getNumEventos@{getNumEventos}}
+\index{getNumEventos@{getNumEventos}!Cronologia@{Cronologia}}
+\doxysubsubsection{\texorpdfstring{getNumEventos()}{getNumEventos()}}
+{\footnotesize\ttfamily int Cronologia\+::get\+Num\+Eventos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Número de eventos. 
+
+\begin{DoxyReturn}{Devuelve}
+devuelve el numero de eventos que tiene el vector eventos 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cronologia_a60d227de9ea5766965418f8f944dc4f2}\label{class_cronologia_a60d227de9ea5766965418f8f944dc4f2}} 
+\index{Cronologia@{Cronologia}!insertFechaHistorica@{insertFechaHistorica}}
+\index{insertFechaHistorica@{insertFechaHistorica}!Cronologia@{Cronologia}}
+\doxysubsubsection{\texorpdfstring{insertFechaHistorica()}{insertFechaHistorica()}}
+{\footnotesize\ttfamily void Cronologia\+::insert\+Fecha\+Historica (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fecha_historica}{Fecha\+Historica}} \&}]{f }\end{DoxyParamCaption})}
+
+
+
+insertar un objeto \mbox{\hyperlink{class_fecha_historica}{Fecha\+Historica}} dentro del array eventos 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em f,objeto} & \mbox{\hyperlink{class_fecha_historica}{Fecha\+Historica}} que se asignará a la nueva posición del array\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+vector eventos redimensionado con una nueva posicion y con el parametro f ya insertado y ordenado 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cronologia_ac9fddecd2c0a8416d7896d61c74e4dd8}\label{class_cronologia_ac9fddecd2c0a8416d7896d61c74e4dd8}} 
+\index{Cronologia@{Cronologia}!operator=@{operator=}}
+\index{operator=@{operator=}!Cronologia@{Cronologia}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cronologia}{Cronologia}}\& Cronologia\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_cronologia}{Cronologia}} \&}]{c }\end{DoxyParamCaption})}
+
+
+
+Sobrecarga del operador =. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em c} & un objeto de \mbox{\hyperlink{class_cronologia}{Cronologia}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+devuelve el propio objeto con los valores del objeto c 
+\end{DoxyReturn}
+
+
+\doxysubsection{Documentación de las funciones relacionadas y clases amigas}
+\mbox{\Hypertarget{class_cronologia_a963240bc402aeeeb3f6d6c4c4c4960bf}\label{class_cronologia_a963240bc402aeeeb3f6d6c4c4c4960bf}} 
+\index{Cronologia@{Cronologia}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Cronologia@{Cronologia}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{flujo,  }\item[{const \mbox{\hyperlink{class_cronologia}{Cronologia}} \&}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Sobrecarga del operador $<$$<$. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em flujo} & stream de salida \\
+\hline
+{\em c,objeto} & \mbox{\hyperlink{class_cronologia}{Cronologia}} a escribir \\
+\hline
+\end{DoxyParams}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+include/cronologia.\+h\end{DoxyCompactItemize}

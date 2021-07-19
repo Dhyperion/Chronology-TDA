@@ -1,0 +1,73 @@
+\begin{theindex}
+
+  \item {buscarAcontecimiento}
+    \subitem {FechaHistorica}, \hyperpage{9}
+  \item {buscarEntreFechas}
+    \subitem {Cronologia}, \hyperpage{4}
+  \item {buscarPorFecha}
+    \subitem {Cronologia}, \hyperpage{5}
+  \item {buscarPorPalabra}
+    \subitem {Cronologia}, \hyperpage{5}
+
+  \indexspace
+
+  \item {Cronologia}, \hyperpage{3}
+    \subitem {buscarEntreFechas}, \hyperpage{4}
+    \subitem {buscarPorFecha}, \hyperpage{5}
+    \subitem {buscarPorPalabra}, \hyperpage{5}
+    \subitem {Cronologia}, \hyperpage{4}
+    \subitem {getFechaHistorica}, \hyperpage{5}
+    \subitem {getNumEventos}, \hyperpage{6}
+    \subitem {insertFechaHistorica}, \hyperpage{6}
+    \subitem {operator$<$$<$}, \hyperpage{7}
+    \subitem {operator=}, \hyperpage{6}
+
+  \indexspace
+
+  \item {FechaHistorica}, \hyperpage{7}
+    \subitem {buscarAcontecimiento}, \hyperpage{9}
+    \subitem {FechaHistorica}, \hyperpage{8}
+    \subitem {getAcontecimiento}, \hyperpage{9}
+    \subitem {getFecha}, \hyperpage{9}
+    \subitem {getNumAcon}, \hyperpage{9}
+    \subitem {insertAcontecimiento}, \hyperpage{10}
+    \subitem {operator$<$}, \hyperpage{10}
+    \subitem {operator=}, \hyperpage{10}
+    \subitem {setFecha}, \hyperpage{11}
+
+  \indexspace
+
+  \item {getAcontecimiento}
+    \subitem {FechaHistorica}, \hyperpage{9}
+  \item {getFecha}
+    \subitem {FechaHistorica}, \hyperpage{9}
+  \item {getFechaHistorica}
+    \subitem {Cronologia}, \hyperpage{5}
+  \item {getNumAcon}
+    \subitem {FechaHistorica}, \hyperpage{9}
+  \item {getNumEventos}
+    \subitem {Cronologia}, \hyperpage{6}
+
+  \indexspace
+
+  \item {insertAcontecimiento}
+    \subitem {FechaHistorica}, \hyperpage{10}
+  \item {insertFechaHistorica}
+    \subitem {Cronologia}, \hyperpage{6}
+
+  \indexspace
+
+  \item {operator$<$}
+    \subitem {FechaHistorica}, \hyperpage{10}
+  \item {operator$<$$<$}
+    \subitem {Cronologia}, \hyperpage{7}
+  \item {operator=}
+    \subitem {Cronologia}, \hyperpage{6}
+    \subitem {FechaHistorica}, \hyperpage{10}
+
+  \indexspace
+
+  \item {setFecha}
+    \subitem {FechaHistorica}, \hyperpage{11}
+
+\end{theindex}
