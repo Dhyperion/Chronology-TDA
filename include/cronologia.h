@@ -48,7 +48,7 @@ Cronologia(const Cronologia& c);
 Cronologia& operator=(const Cronologia &c);
 
 /**
-  * @brief ordena el array FechaHistorica por su fecha de mayor a menos
+  * @brief ordena el array FechaHistorica por su fecha de mayor a menor
   * 
   */
 void ordenar();
